@@ -1,0 +1,29 @@
+{
+  "name": "pomodoro-bot",
+  "version": "1.0.0",
+  "description": "Discord Pomodoro Timer Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msmel01/Pomodoro-Bot.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "javascript",
+    "timer"
+  ],
+  "author": "msmel01",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msmel01/Pomodoro-Bot/issues"
+  },
+  "homepage": "https://github.com/msmel01/Pomodoro-Bot#readme",
+  "dependencies": {
+    "discord.js": "^13.1.0",
+    "dotenv": "^10.0.0"
+  }
+}

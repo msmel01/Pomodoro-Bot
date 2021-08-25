@@ -89,7 +89,20 @@ module.exports = class Timer {
 
 
     restartTimer(interaction) {
-
+        if (this.work_timer_running) {
+            clearInterval(this.work_timer);
+            this.work_timer_running = false; 
+        } else if (this.break_timer_running) {
+            clearInterval(this.break_timer);
+            this.break_timer_running = false; 
+        } else {
+            interaction.reply('The timer was not started! Use /start if you wish to do this.');
+            return;
+        }
+        this.work_time_remaining = this.work_time * 60000; // in milliseconds
+        this.break_time_remaining = this.break_time * 60000; // in milliseconds
+        this.sec_count = 0;
+        this.startTimer(interaction);
     }
 
 }

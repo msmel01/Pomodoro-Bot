@@ -12,6 +12,7 @@ module.exports = new MessageEmbed()
     { name: '/start', value: 'Start the timer.'},
     { name: '/pause', value: 'Pause the timer. You can continue where you left off by using the /start command.'},
     { name: '/restart', value: 'Reset the timer and start from the beginning of your session.'},
+    { name: '/repeat', value: 'Set the number of pomodoro sessions. The timer will automatically run for the number you specify. 1 by default.'},
     { name: '/help', value: 'See this again.'},
 )
 .addField('Suggestions or issues?', 'Let me know on my github page (click the title of this message to go there)!', true)
